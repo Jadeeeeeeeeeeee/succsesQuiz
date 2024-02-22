@@ -1,0 +1,119 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height:98%;
+    width: 98%;
+}
+
+#root{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50vh;
+    width: 50vh;
+    font-family: arial, sans-serif;
+    border: black solid 2px ;
+    border-radius: 15px;
+}
+
+h3 {
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h1{
+text-align: center;
+}
+
+
+
+.specialButtons{
+    position: absolute;
+    left: 20%;
+}
+
+.specialButtons2{
+    position: absolute;
+    left: 15%;
+}
+
+.firstQ{
+    margin-left: 85px;
+}
+
+.secondQ{
+    margin-left: 95px;
+}
+
+.OtheQ{
+    margin-left: 95px;
+}
+
+.pointShower{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+#disclaimer{
+    position: absolute;
+    top: 100%;
+}
+
+button:not(submit) {
+    border-radius: 5px;
+    background-color: aqua;
+    border:black solid 0.5px;
+    font-weight:lighter ;
+    margin-left: 80px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(180, 100%, 30%);
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+.Input1{
+    position: absolute;
+    left: 20%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 16.8px;
+    border-width: 2px;
+    box-shadow: none;
+    background: white;
+    border:black solid 2px ;
+}
+
+.Input1:focus{
+    outline: none;
+}
+
+.submit{
+    position: absolute;
+    left: 68.8%;
+    background-color: rgb(50, 176, 211);
+    border: none;
+    height: 22px;
+    font-family: arial, sans-serif;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -1px;
+}
+
+
+.submit:hover{
+    cursor: pointer;
+}
