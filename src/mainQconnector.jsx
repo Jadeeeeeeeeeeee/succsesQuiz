@@ -8,7 +8,6 @@ function MainConnector() {
     const [points,setPoints] = useState(5)
    const [meaningOfP, setMeaning] = useState("")
 
-
     function handleQuestionChange() {
         setQuestion(question + 1);
     }
@@ -33,6 +32,27 @@ function MainConnector() {
         }
     }
 
+    function handleGetValueOfSelect() {
+        let ValueOfSelection = document.querySelector('#Selection');
+        if (ValueOfSelection.value === "0") {
+            setPoints(p => p - 1);
+            setPoints(p => p - 1);
+        } else if (ValueOfSelection.value === "1") {
+            setPoints(p => p - 1);
+        } else if (ValueOfSelection.value === "2") {
+            setPoints(p => p - 1);
+        } else if (ValueOfSelection.value === "3") {
+            // do nothing
+        } else if (ValueOfSelection.value === "4") {
+            setPoints(p => p + 1);
+        } else if (ValueOfSelection.value === "5") {
+            setPoints(p => p + 1);
+        } else if (ValueOfSelection.value === "6") {
+            setPoints(p => p + 1);
+            setPoints(p => p + 1);
+        }
+    }
+    
     function calculatePointsMeaning() {
         if (points == 1) {
            setMeaning("i belive you will be unsuccsesful if you dont change you ways") ;
@@ -79,9 +99,17 @@ function MainConnector() {
         </>);
     }else if (question == 4) {
         return(<>
-        <h3>hi {name} do you get good grades? (be honest)</h3>
-        <button onClick={() => { handlePointsPlus(); handleQuestionChange();}} className='OtheQ'>yes</button>
-        <button onClick={() => { handlePointsMinus(); handleQuestionChange();}}className='OtheQ'>no</button>
+        <h1>how many hours do you practice in a day</h1>
+        <select name="" id="Selection">
+            <option value="0">none</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6+</option>
+        </select>
+        <button className='submitSelection'onClick= {() => {handleQuestionChange(); handleGetValueOfSelect();}} >submit</button>
         </>);
     }else if (question == 5) {
         return(<>

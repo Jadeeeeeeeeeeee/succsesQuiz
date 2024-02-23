@@ -40,25 +40,14 @@ text-align: center;
 }
 
 .specialButtons2{
-    position: absolute;
-    left: 15%;
+ margin-left: 150px;
 }
 
-.firstQ{
-    margin-left: 85px;
-}
-
-.secondQ{
-    margin-left: 95px;
-}
-
-.OtheQ{
-    margin-left: 95px;
-}
 
 .pointShower{
     font-size: 4rem;
     font-weight: bolder;
+    text-align: center;
 }
 
 #disclaimer{
@@ -68,15 +57,32 @@ text-align: center;
 
 button:not(submit) {
     border-radius: 5px;
-    background-color: aqua;
-    border:black solid 0.5px;
+    background:linear-gradient(90deg, rgb(0, 204, 255), aqua);
+    border:black solid 0px;
     font-weight:lighter ;
-    margin-left: 80px;
+    margin-left: 85px;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
 }
 
 button:hover{
     cursor: pointer;
-    background-color: hsl(180, 100%, 30%);
+    background:linear-gradient(90deg, hsl(192, 100%, 25%), hsl(180, 100%, 25%));
+}
+
+#Selection{
+    position: absolute;
+    left: 27%;
+    height: 30px;
+    width: 100px;
+    font-size: 1rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#Selection:focus{
+    outline: none;
 }
 
 h2{
@@ -90,7 +96,7 @@ h2{
     border-bottom-left-radius: 5px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    height: 16.8px;
+    height: 33.6px;
     border-width: 2px;
     box-shadow: none;
     background: white;
@@ -104,16 +110,38 @@ h2{
 .submit{
     position: absolute;
     left: 68.8%;
-    background-color: rgb(50, 176, 211);
+    background:linear-gradient(90deg, rgb(0, 204, 255), aqua);
+    border: none;
+    height: 38.8px;
+    font-family: arial, sans-serif;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-left: -1px;
+    font-weight: 500;
+}
+
+.submitSelection{
+    position: absolute;
+    left: 55%;
+    background:linear-gradient(90deg, rgb(0, 204, 255), aqua);
     border: none;
     height: 22px;
     font-family: arial, sans-serif;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     margin-left: -1px;
+    font-weight: 500;
+    height: 30px;
+    width: 60px;
+    font-size: 1rem;
 }
 
 
 .submit:hover{
     cursor: pointer;
+    background:linear-gradient(90deg, hsl(192, 100%, 25%), hsl(180, 100%, 25%));
 }
