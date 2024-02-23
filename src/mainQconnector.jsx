@@ -99,7 +99,7 @@ function MainConnector() {
         </>);
     }else if (question == 4) {
         return(<>
-        <h1>how many hours do you practice in a day</h1>
+        <h1>how many hours do you practice in a day (avreage hours)</h1>
         <select name="" id="Selection">
             <option value="0">none</option>
             <option value="1">1</option>
@@ -109,7 +109,7 @@ function MainConnector() {
             <option value="5">5</option>
             <option value="6">6+</option>
         </select>
-        <button className='submitSelection'onClick= {() => {handleQuestionChange(); handleGetValueOfSelect();}} >submit</button>
+        <button className='submitSelection'onClick= {() => {handleQuestionChange(); handleGetValueOfSelect();}}>submit</button>
         </>);
     }else if (question == 5) {
         return(<>
